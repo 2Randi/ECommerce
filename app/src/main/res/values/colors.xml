@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lightGrey">#959595</color>
+    <color name="light2Grey">#CCCCCC</color>
+    <color name="transparent">#00FFFFFF</color>
+
+    <!--Color  theme  Client-->
+    <color name="moccasin">#FFE4B5</color>
+    <color name="gold"> #FFD700</color>
+    <!--end Color-->
+
+    <!--Color theme   Fournisseur-->
+    <color name="Basané">#8B6C42</color>
+    <color name="Beige">#C8AD7F</color>
+    <color name="beige_clair"> #F5F5DC</color>
+    <color name="beigeasse"> #AFA778</color>
+    <!--end Color-->
+
+
+
+</resources>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_genere2">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/log_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        android:contentDescription="@string/content_description"
+        android:focusable="auto"
+        android:onClick="logOut"
+        app:backgroundTint="@color/gold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_logout"
+        tools:ignore="SpeakableT    extPresentCheck" />
+   <!---->
+
+
+   <!-- <ImageView
+        android:id="@+id/SportImageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintTop_toBottomOf="@+id/name_user"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:background="@drawable/fournissuer_1"
+        android:contentDescription="@string/content_description"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck,MissingConstraints,SpeakableTextPresentCheck,UsingOnClickInXml"
+        tools:layout_editor_absoluteY="1dp" /> -->
+
+
+    <TextView
+        android:id="@+id/name_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="10"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/log_out"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black"
+        android:background="@drawable/button_round_gold"
+        />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/menu"
+            android:textColor="@color/gold"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:background="@color/black"
+            />
+
+        <Button
+            android:id="@+id/find_product"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_round_gold"
+            android:elevation="10dp"
+            android:fontFamily="sans-serif"
+            android:onClick="findProduct"
+            android:text="@string/find_a_product"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/logo_find_product"
+            tools:ignore="UsingOnClickInXml,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/choose_interest"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_round_gold"
+            android:elevation="10dp"
+            android:fontFamily="sans-serif"
+            android:onClick="chooseInterests"
+            android:text="@string/what_are_you_interested_in"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/logo_interest"
+            tools:ignore="UsingOnClickInXml,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/prod_interesting"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_round_gold"
+            android:elevation="10dp"
+            android:fontFamily="sans-serif"
+            android:onClick="prodInteresting"
+            android:text="@string/prod_interesting"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/logo_question"
+            tools:ignore="UsingOnClickInXml,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/find_store"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_round_gold"
+            android:elevation="10dp"
+            android:fontFamily="sans-serif"
+            android:onClick="findStore"
+            android:text="@string/find_a_store"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/logo_searching_a_store"
+            tools:ignore="UsingOnClickInXml,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/basket"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_round_gold"
+            android:elevation="10dp"
+            android:fontFamily="sans-serif"
+            android:onClick="seeBasket"
+            android:text="@string/basket"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/logo_cart"
+            tools:ignore="UsingOnClickInXml,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/orders"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_round_gold"
+            android:elevation="10dp"
+            android:fontFamily="sans-serif"
+            android:onClick="myOrders"
+            android:text="@string/my_orders"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/logo_list"
+            tools:ignore="UsingOnClickInXml,TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

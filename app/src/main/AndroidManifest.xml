@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+    <activity
+        android:name=".activity.IdentificationActivity"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+
+    <!-- MERCHANT ACTIVITIES -->
+    <activity
+        android:name=".activity.fournisseur.CreateStoreActivityM"
+        android:exported="false" />
+
+    <activity
+        android:name=".activity.fournisseur.MenuActivityM"
+        android:exported="false" />
+
+    <activity
+        android:name=".activity.fournisseur.ConsultCategoriesStoreActivityM"
+        android:exported="false" />
+
+    <activity
+        android:name=".activity.fournisseur.ConsultListProductsActivityM"
+        android:exported="false" />
+
+    <activity
+        android:name=".activity.fournisseur.ConsultProductActivityM"
+        android:exported="false" />
+
+    <activity
+        android:name=".activity.fournisseur.AddCategoryActivityM"
+        android:exported="false" />
+
+    <activity
+        android:name=".activity.fournisseur.AddProductActivityM"
+        android:exported="false" />
+
+    <activity
+        android:name=".activity.fournisseur.ConsultOrdersActivityM"
+        android:exported="false" />
+
+    <activity
+        android:name=".activity.fournisseur.ConsultOrderActivityM"
+        android:exported="false" />
+
+    <activity
+        android:name=".activity.fournisseur.AddOfferActivityM"
+        android:exported="false" />
+
+
+
+    <!-- CLIENT ACTIVITIES -->
+    <activity
+        android:name=".activity.client.MenuActivityC"
+        android:exported="false" />
+
+    <activity
+        android:name=".activity.client.FindStoreActivityC"
+        android:exported="false" />
+
+    <activity
+        android:name=".activity.client.FindProductActivityC"
+        android:exported="false" />
+
+    <activity
+        android:name=".activity.client.ConsultStoreActivityC"
+        android:exported="false" />
+
+    <activity
+        android:name=".activity.client.ConsultCategoriesStoreActivityC"
+        android:exported="false" />
+
+    <activity
+        android:name=".activity.client.ConsultListProductsActivityC"
+        android:exported="false" />
+
+    <activity
+        android:name=".activity.client.ConsultProductActivityC"
+        android:exported="false" />
+
+    <activity
+        android:name=".activity.client.ConsultBasketActivityC"
+        android:exported="false" />
+
+    <activity
+        android:name=".activity.client.ConsultOrdersActivityC"
+        android:exported="false" />
+
+    <activity
+        android:name=".activity.client.ConsultOrderActivityC"
+        android:exported="false" />
+
+    <activity
+        android:name=".activity.client.ChooseInterestsActivityC"
+        android:exported="false" />
+
+</application>
+
+
+</manifest>
