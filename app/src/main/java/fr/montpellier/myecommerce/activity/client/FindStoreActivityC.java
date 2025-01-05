@@ -14,6 +14,7 @@ import fr.montpellier.myecommerce.activity.ConnectedClientActivity;
 import fr.montpellier.myecommerce.adapter.client.StoreListAdapterC;
 import fr.montpellier.myecommerce.db.AppDatabase;
 import fr.montpellier.myecommerce.db.entity.Store;
+import fr.montpellier.myecommerce.R;
 
 public class FindStoreActivityC extends ConnectedClientActivity {
 

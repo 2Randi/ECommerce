@@ -1,4 +1,10 @@
 package fr.montpellier.myecommerce.activity;
 
-public class ConnectedMerchantWithoutStoreActivity {
+import fr.montpellier.myecommerce.middleware.MerchantWithoutStoreMiddleware;
+
+public  class ConnectedMerchantWithoutStoreActivity extends ConnectedMerchantActivity {
+    public ConnectedMerchantWithoutStoreActivity(){
+        super();
+        store_middleWare = new MerchantWithoutStoreMiddleware();
+    }
 }

@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import fr.montpellier.myecommerce.R;
 import fr.montpellier.myecommerce.activity.ConnectedClientActivity;
 import fr.montpellier.myecommerce.adapter.client.CategoryListAdapterC;
 import fr.montpellier.myecommerce.db.AppDatabase;

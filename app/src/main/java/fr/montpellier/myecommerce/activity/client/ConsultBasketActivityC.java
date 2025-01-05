@@ -14,7 +14,10 @@ import android.widget.Toast;
 import java.util.Date;
 import java.util.List;
 
+
+import fr.montpellier.myecommerce.R;
 import fr.montpellier.myecommerce.activity.ConnectedClientActivity;
+import fr.montpellier.myecommerce.adapter.client.ProductInBasketAdapterC;
 import fr.montpellier.myecommerce.db.AppDatabase;
 import fr.montpellier.myecommerce.db.entity.Offer;
 import fr.montpellier.myecommerce.db.entity.Order;
@@ -23,6 +26,7 @@ import fr.montpellier.myecommerce.db.entity.ProductInBasket;
 import fr.montpellier.myecommerce.db.entity.ProductInOrder;
 import fr.montpellier.myecommerce.db.entity.Store;
 import fr.montpellier.myecommerce.db.entity.User;
+import fr.montpellier.myecommerce.manager.BasketManager;
 import fr.montpellier.myecommerce.manager.ConnectionManager;
 
 public class ConsultBasketActivityC extends ConnectedClientActivity {

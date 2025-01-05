@@ -15,7 +15,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
 
-import fr.montpellier.myecomerce.R;
+import fr.montpellier.myecommerce.R;
 import fr.montpellier.myecommerce.activity.ConnectedMerchantWithStoreActivity;
 import fr.montpellier.myecommerce.db.AppDatabase;
 import fr.montpellier.myecommerce.db.entity.Offer;

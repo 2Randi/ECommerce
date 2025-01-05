@@ -1,5 +1,4 @@
 package fr.montpellier.myecommerce.activity.client;
-package com.icostore.activity.client;
 
 import android.os.Bundle;
 import android.text.Editable;
@@ -9,13 +8,13 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.icostore.R;
-import com.icostore.activity.ConnectedClientActivity;
-import com.icostore.adapter.client.ProductListAdapterC;
-import com.icostore.db.AppDatabase;
-import com.icostore.db.entity.Product;
-
 import java.util.List;
+
+import fr.montpellier.myecommerce.R;
+import fr.montpellier.myecommerce.activity.ConnectedClientActivity;
+import fr.montpellier.myecommerce.adapter.client.ProductListAdapterC;
+import fr.montpellier.myecommerce.db.AppDatabase;
+import fr.montpellier.myecommerce.db.entity.Product;
 
 public class FindProductActivityC extends ConnectedClientActivity {
 

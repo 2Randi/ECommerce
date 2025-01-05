@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
 
-import fr.montpellier.myecomerce.R;
+import fr.montpellier.myecommerce.R;
 import fr.montpellier.myecommerce.InterestCheckbox;
 
 import java.util.ArrayList;

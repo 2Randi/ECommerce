@@ -10,11 +10,11 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import fr.montpellier.myecommerce.R;
 import fr.montpellier.myecommerce.activity.ConnectedClientActivity;
 import fr.montpellier.myecommerce.db.AppDatabase;
 import fr.montpellier.myecommerce.db.entity.Product;
 import fr.montpellier.myecommerce.db.entity.Store;
+import fr.montpellier.myecommerce.R;
 
 import java.util.ArrayList;
 

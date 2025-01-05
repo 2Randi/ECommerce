@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
+import fr.montpellier.myecommerce.R;
 
 import fr.montpellier.myecommerce.activity.ConnectedClientActivity;
 import fr.montpellier.myecommerce.adapter.client.ProductListAdapterC;

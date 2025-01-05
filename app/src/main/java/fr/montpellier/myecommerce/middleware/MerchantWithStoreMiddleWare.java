@@ -3,8 +3,8 @@ package fr.montpellier.myecommerce.middleware;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 
-import fr.montpellier.myecommerce.activity.MiddlewareActivity;
 import fr.montpellier.myecommerce.activity.fournisseur.CreateStoreActivityM;
+import fr.montpellier.myecommerce.activity.MiddlewareActivity;
 import fr.montpellier.myecommerce.db.AppDatabase;
 import fr.montpellier.myecommerce.db.entity.Store;
 import fr.montpellier.myecommerce.db.entity.User;

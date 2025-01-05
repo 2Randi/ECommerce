@@ -7,25 +7,15 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="ECommerce"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
 
 
     <activity
-        android:name=".activity.IdentificationActivity"
+        android:name="fr.montpellier.myecommerce.activity.IdentificationActivity"
         android:exported="true">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
@@ -37,90 +27,128 @@
 
     <!-- MERCHANT ACTIVITIES -->
     <activity
-        android:name=".activity.fournisseur.CreateStoreActivityM"
+        android:name="fr.montpellier.myecommerce.activity.fournisseur.CreateStoreActivityM"
         android:exported="false" />
 
     <activity
-        android:name=".activity.fournisseur.MenuActivityM"
+        android:name="fr.montpellier.myecommerce.activity.fournisseur.MenuActivityM"
         android:exported="false" />
 
     <activity
-        android:name=".activity.fournisseur.ConsultCategoriesStoreActivityM"
+        android:name="fr.montpellier.myecommerce.activity.fournisseur.ConsultCategoriesStoreActivityM"
         android:exported="false" />
 
     <activity
-        android:name=".activity.fournisseur.ConsultListProductsActivityM"
+        android:name="fr.montpellier.myecommerce.activity.fournisseur.ConsultListProductsActivityM"
         android:exported="false" />
 
     <activity
-        android:name=".activity.fournisseur.ConsultProductActivityM"
+        android:name="fr.montpellier.myecommerce.activity.fournisseur.ConsultProductActivityM"
         android:exported="false" />
 
     <activity
-        android:name=".activity.fournisseur.AddCategoryActivityM"
+        android:name="fr.montpellier.myecommerce.activity.fournisseur.AddCategoryActivityM"
         android:exported="false" />
 
     <activity
-        android:name=".activity.fournisseur.AddProductActivityM"
+        android:name="fr.montpellier.myecommerce.activity.fournisseur.AddProductActivityM"
         android:exported="false" />
 
     <activity
-        android:name=".activity.fournisseur.ConsultOrdersActivityM"
+        android:name="fr.montpellier.myecommerce.activity.fournisseur.ConsultOrdersActivityM"
         android:exported="false" />
 
     <activity
-        android:name=".activity.fournisseur.ConsultOrderActivityM"
+        android:name="fr.montpellier.myecommerce.activity.fournisseur.ConsultOrderActivityM"
         android:exported="false" />
 
     <activity
-        android:name=".activity.fournisseur.AddOfferActivityM"
+        android:name="fr.montpellier.myecommerce.activity.fournisseur.AddOfferActivityM"
         android:exported="false" />
 
 
 
     <!-- CLIENT ACTIVITIES -->
     <activity
-        android:name=".activity.client.MenuActivityC"
+        android:name="fr.montpellier.myecommerce.activity.client.MenuActivityC"
         android:exported="false" />
 
     <activity
-        android:name=".activity.client.FindStoreActivityC"
+        android:name="fr.montpellier.myecommerce.activity.client.FindStoreActivityC"
         android:exported="false" />
 
     <activity
-        android:name=".activity.client.FindProductActivityC"
+        android:name="fr.montpellier.myecommerce.activity.client.FindProductActivityC"
         android:exported="false" />
 
     <activity
-        android:name=".activity.client.ConsultStoreActivityC"
+        android:name="fr.montpellier.myecommerce.activity.client.ConsultStoreActivityC"
         android:exported="false" />
 
     <activity
-        android:name=".activity.client.ConsultCategoriesStoreActivityC"
+        android:name="fr.montpellier.myecommerce.activity.client.ConsultCategoriesStoreActivityC"
         android:exported="false" />
 
     <activity
-        android:name=".activity.client.ConsultListProductsActivityC"
+        android:name="fr.montpellier.myecommerce.activity.client.ConsultListProductsActivityC"
         android:exported="false" />
 
     <activity
-        android:name=".activity.client.ConsultProductActivityC"
+        android:name="fr.montpellier.myecommerce.activity.client.ConsultProductActivityC"
         android:exported="false" />
 
     <activity
-        android:name=".activity.client.ConsultBasketActivityC"
+        android:name="fr.montpellier.myecommerce.activity.client.ConsultBasketActivityC"
         android:exported="false" />
 
     <activity
-        android:name=".activity.client.ConsultOrdersActivityC"
+        android:name="fr.montpellier.myecommerce.activity.client.ConsultOrdersActivityC"
         android:exported="false" />
 
     <activity
-        android:name=".activity.client.ConsultOrderActivityC"
+        android:name="fr.montpellier.myecommerce.activity.client.ConsultOrderActivityC"
         android:exported="false" />
 
     <activity
-        android:name=".activity.client.ChooseInterestsActivityC"
+        android:name="fr.montpellier.myecommerce.activity.client.ChooseInterestsActivityC"
+        android:exported="false" />
+
+
+    <!--  ACTIVITIES -->
+    <activity
+        android:name="fr.montpellier.myecommerce.activity.ConnectedActivity"
+        android:exported="false" />
+
+    <activity
+        android:name="fr.montpellier.myecommerce.activity.ConnectedClientActivity"
+        android:exported="false" />
+
+    <activity
+        android:name="fr.montpellier.myecommerce.activity.ConnectedMerchantActivity"
+        android:exported="false" />
+
+    <activity
+        android:name="fr.montpellier.myecommerce.activity.ConnectedMerchantWithoutStoreActivity"
+        android:exported="false" />
+
+    <activity
+        android:name="fr.montpellier.myecommerce.activity.ConnectedMerchantWithStoreActivity"
+        android:exported="false" />
+
+    <activity
+        android:name="fr.montpellier.myecommerce.activity.IcoStore"
+        android:exported="false" />
+
+    <activity
+        android:name="fr.montpellier.myecommerce.activity.IcoStoreActivity"
+        android:exported="false" />
+
+    <activity
+        android:name="fr.montpellier.myecommerce.activity.MiddlewareActivity"
+        android:exported="false" />
+
+    <activity
+        android:name="fr.montpellier.myecommerce.activity.NotConnectedActivity"
         android:exported="false" />
 
 </application>

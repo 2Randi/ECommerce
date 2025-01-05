@@ -14,6 +14,7 @@ import fr.montpellier.myecommerce.adapter.client.OrderListAdapterC;
 import fr.montpellier.myecommerce.db.AppDatabase;
 import fr.montpellier.myecommerce.db.entity.Order;
 import fr.montpellier.myecommerce.manager.ConnectionManager;
+import fr.montpellier.myecommerce.R;
 
 public class ConsultOrdersActivityC extends ConnectedClientActivity {
     List<Order> orders;

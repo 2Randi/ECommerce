@@ -12,7 +12,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-import fr.montpellier.myecomerce.R;
+import fr.montpellier.myecommerce.R;
 import fr.montpellier.myecommerce.InterestCheckbox;
 import fr.montpellier.myecommerce.activity.ConnectedMerchantWithStoreActivity;
 import fr.montpellier.myecommerce.adapter.InterestCheckboxAdapter;
@@ -23,6 +23,7 @@ import fr.montpellier.myecommerce.db.entity.InterestForCategory;
 import fr.montpellier.myecommerce.db.entity.Product;
 import fr.montpellier.myecommerce.db.entity.Store;
 import fr.montpellier.myecommerce.manager.ConnectionManager;
+
 
 public class AddCategoryActivityM extends ConnectedMerchantWithStoreActivity {
     private Store store;

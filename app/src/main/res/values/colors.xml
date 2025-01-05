@@ -9,8 +9,7 @@
 
     <!--Color  theme  Client-->
     <color name="moccasin">#FFE4B5</color>
-    <color name="gold"> #FFD700</color>
-    <!--end Color-->
+    <color name="lightBlue">#ADD8E6</color>
 
     <!--Color theme   Fournisseur-->
     <color name="Basané">#8B6C42</color>

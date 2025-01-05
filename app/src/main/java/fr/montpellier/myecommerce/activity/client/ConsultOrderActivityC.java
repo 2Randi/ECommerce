@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import fr.montpellier.myecommerce.R;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

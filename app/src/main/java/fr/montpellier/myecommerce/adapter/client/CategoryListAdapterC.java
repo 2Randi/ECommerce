@@ -14,7 +14,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import java.util.ArrayList;
 import java.util.List;
 
-import fr.montpellier.myecomerce.R;
+import fr.montpellier.myecommerce.R;
 import fr.montpellier.myecommerce.activity.client.ConsultListProductsActivityC;
 import fr.montpellier.myecommerce.db.AppDatabase;
 import fr.montpellier.myecommerce.db.entity.Category;

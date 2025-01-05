@@ -11,7 +11,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import fr.montpellier.myecommerce.R;
 import fr.montpellier.myecommerce.activity.ConnectedClientActivity;
 import fr.montpellier.myecommerce.db.AppDatabase;
 import fr.montpellier.myecommerce.db.entity.Category;
@@ -21,6 +20,7 @@ import fr.montpellier.myecommerce.db.entity.ProductInBasket;
 import fr.montpellier.myecommerce.db.entity.Store;
 import fr.montpellier.myecommerce.db.entity.User;
 import fr.montpellier.myecommerce.manager.ConnectionManager;
+import fr.montpellier.myecommerce.R;
 
 import java.util.Date;
 

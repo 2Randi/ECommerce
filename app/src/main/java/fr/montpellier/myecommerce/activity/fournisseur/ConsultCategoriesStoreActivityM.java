@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import fr.montpellier.myecomerce.R;
+import fr.montpellier.myecommerce.R;
 import fr.montpellier.myecommerce.activity.ConnectedMerchantWithStoreActivity;
 import fr.montpellier.myecommerce.db.AppDatabase;
 import fr.montpellier.myecommerce.db.entity.Category;

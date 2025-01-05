@@ -42,7 +42,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/button_round_white"
                 android:text="@string/clear_basket"
-                android:textColor="@color/gold"
+                android:textColor="@color/lightBlue"
                 android:backgroundTint="@color/black"
                 android:textAllCaps="false" />
         </LinearLayout>
@@ -90,7 +90,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/button_round_white"
                 android:gravity="center"
-                android:textColor="@color/gold"
+                android:textColor="@color/lightBlue"
                 android:backgroundTint="@color/black"
 
                 android:textSize="20sp" />

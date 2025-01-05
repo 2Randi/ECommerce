@@ -16,7 +16,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import java.util.ArrayList;
 import java.util.List;
 
-import fr.montpellier.myecomerce.R;
+import fr.montpellier.myecommerce.R;
 import fr.montpellier.myecommerce.activity.fournisseur.AddProductActivityM;
 import fr.montpellier.myecommerce.activity.fournisseur.ConsultListProductsActivityM;
 import fr.montpellier.myecommerce.db.AppDatabase;

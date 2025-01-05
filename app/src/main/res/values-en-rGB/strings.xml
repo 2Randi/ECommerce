@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">IcoStore</string>
+    <string name="app_name">ECommerce</string>
     <string name="register">Registration</string>
     <string name="mail">Email</string>
     <string name="validate">Validate</string>

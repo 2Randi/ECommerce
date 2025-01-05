@@ -1,9 +1,11 @@
 package fr.montpellier.myecommerce.activity;
 
-import android.annotation.SuppressLint;
-import android.os.Bundle;
 
-public abstract class ConnectedMerchantWithStoreActivity {
-    @SuppressLint("SetTextI18n")
-    protected abstract void onCreate(Bundle savedInstanceState);
+import fr.montpellier.myecommerce.middleware.MerchantWithStoreMiddleWare;
+
+public  class ConnectedMerchantWithStoreActivity extends ConnectedMerchantActivity {
+    public ConnectedMerchantWithStoreActivity(){
+        super();
+        store_middleWare = new MerchantWithStoreMiddleWare();
+    }
 }
