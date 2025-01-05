@@ -41,18 +41,6 @@ public class IdentificationActivity extends NotConnectedActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Appliquer StrictMode
-        StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder()
-                .detectAll()
-                .penaltyLog()
-                .build());
-        StrictMode.setVmPolicy(new StrictMode.VmPolicy.Builder()
-                .detectLeakedSqlLiteObjects()
-                .detectLeakedClosableObjects()
-                .penaltyLog()
-                .build());
-
-
         // Vérifier si une redirection a eu lieu, si oui, retourner
         if(is_redirected) return;
         // Vérifier et gérer l'état de la connexion
