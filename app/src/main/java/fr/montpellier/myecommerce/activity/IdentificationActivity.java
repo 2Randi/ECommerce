@@ -41,6 +41,17 @@ public class IdentificationActivity extends NotConnectedActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // Obtenir l'instance de la base de données
+        AppDatabase db = AppDatabase.getInstance(getApplicationContext());
+
+        // Démarrer l'initialisation de la base de données dans un thread séparé
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                db.init();
+            }
+        }).start();
+
         // Vérifier si une redirection a eu lieu, si oui, retourner
         if(is_redirected) return;
         // Vérifier et gérer l'état de la connexion

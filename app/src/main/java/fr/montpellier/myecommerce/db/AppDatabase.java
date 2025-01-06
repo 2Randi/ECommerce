@@ -6,6 +6,7 @@ import android.util.Log;
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
+import androidx.room.Transaction;
 import androidx.room.TypeConverters;
 
 import java.util.ArrayList;
@@ -75,6 +76,10 @@ public abstract class AppDatabase extends RoomDatabase {
     }
 
     public void clear(){
+        userDAO().clear();
+        storeDAO().clear();
+        categoryDAO().clear();
+        productDAO().clear();
         offerDAO().clear();
         userHasInterestDAO().clear();
         interestForCategoryDAO().clear();
@@ -82,10 +87,7 @@ public abstract class AppDatabase extends RoomDatabase {
         productInOrderDAO().clear();
         orderDAO().clear();
         productInBasketDAO().clear();
-        productDAO().clear();
-        categoryDAO().clear();
-        storeDAO().clear();
-        userDAO().clear();
+
     }
 
 
@@ -106,20 +108,27 @@ public abstract class AppDatabase extends RoomDatabase {
     }
 
 
-
-    public void fillStores(){
+    public void fillStores() {
         StoreDAO storeDAO = storeDAO();
         ArrayList<Store> stores = new ArrayList<>();
 
-        stores.add(new Store(userDAO().get("decathlon@gmail.com").id_user,"Decathlon", null));
-        stores.add(new Store(userDAO().get("rajaofetrav@gmail.com").id_user,"Rajaofetra shop", null));
-        stores.add(new Store(userDAO().get("dago@gmail.com").id_user,"Dago Urban Wear", null));
-
-
+        // On récupère les utilisateurs
+        // On récupère les utilisateurs
+        User decathlonUser = userDAO().get("decathlon@gmail.com");
+        Log.d("AppDatabase", "Decathlon User: " + decathlonUser);
+        User rajaofetraUser = userDAO().get("rajaofetra@gmail.com");
+        Log.d("AppDatabase", "Rajaofetra User: " + rajaofetraUser);
+        User dagoUser = userDAO().get("dago@gmail.com");
+        Log.d("AppDatabase", "Dago User: " + dagoUser);
+        stores.add(new Store(decathlonUser.id_user, "Decathlon", null));
+        stores.add(new Store(rajaofetraUser.id_user, "Rajaofetra shop", null));
+        stores.add(new Store(dagoUser.id_user, "Dago Urban Wear", null));
 
         storeDAO.insertAll(stores);
-        fillUsers();
+
     }
+
+
 
     public void fillInterests(){
         InterestDAO interestDAO = interestDAO();
@@ -184,7 +193,7 @@ public abstract class AppDatabase extends RoomDatabase {
         productDAO.insertAll(products);
     }
 
-
+    @Transaction
     public void init(){
         if (getUserCount() == 0) {
             // Efface toutes les tables et remplit la base de données avec des exemples
@@ -197,6 +206,7 @@ public abstract class AppDatabase extends RoomDatabase {
             fillProducts();
         }
     }
+
 
     // Verifier si la base de donnée est vide
     private int getUserCount() {

@@ -19,6 +19,10 @@ public class IcoStoreActivity  extends AppCompatActivity  {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        AppDatabase db = AppDatabase.getInstance(getApplicationContext());
+        db.init();
+
         IcoStoreApp.setCurrentAct(this);
 
     }
