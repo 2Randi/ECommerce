@@ -68,9 +68,13 @@ public abstract class AppDatabase extends RoomDatabase {
     public abstract OrderDAO orderDAO();
     public abstract ProductInOrderDAO productInOrderDAO();
 
+
     public static AppDatabase getInstance(Context applicationContext) {
         if(INSTANCE == null) {
-            INSTANCE = Room.databaseBuilder(applicationContext,AppDatabase.class,"db").allowMainThreadQueries().fallbackToDestructiveMigration().build();
+            INSTANCE = Room.databaseBuilder(applicationContext,AppDatabase.class,"db")
+                    .allowMainThreadQueries()
+                    .fallbackToDestructiveMigration()
+                    .build();
         }
         return INSTANCE;
     }
@@ -112,7 +116,6 @@ public abstract class AppDatabase extends RoomDatabase {
         StoreDAO storeDAO = storeDAO();
         ArrayList<Store> stores = new ArrayList<>();
 
-        // On récupère les utilisateurs
         // On récupère les utilisateurs
         User decathlonUser = userDAO().get("decathlon@gmail.com");
         Log.d("AppDatabase", "Decathlon User: " + decathlonUser);
@@ -195,6 +198,7 @@ public abstract class AppDatabase extends RoomDatabase {
 
     @Transaction
     public void init(){
+        Log.d("AppDatabase", "init called");
         if (getUserCount() == 0) {
             // Efface toutes les tables et remplit la base de données avec des exemples
             clear();

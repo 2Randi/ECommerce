@@ -44,13 +44,7 @@ public class IdentificationActivity extends NotConnectedActivity {
         // Obtenir l'instance de la base de données
         AppDatabase db = AppDatabase.getInstance(getApplicationContext());
 
-        // Démarrer l'initialisation de la base de données dans un thread séparé
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                db.init();
-            }
-        }).start();
+        db.init();
 
         // Vérifier si une redirection a eu lieu, si oui, retourner
         if(is_redirected) return;
